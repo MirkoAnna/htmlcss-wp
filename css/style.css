@@ -39,7 +39,7 @@ nav li {
     display: inline;
     list-style: none;
     text-transform: uppercase;
-    font-size: 60%;
+    font-size: 65%;
     padding-right: 2%;
 }
 
@@ -58,6 +58,7 @@ nav li a {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .banner img {
@@ -65,7 +66,6 @@ nav li a {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-
 }
 
 .banner-text {
@@ -92,27 +92,44 @@ nav li a {
 
 /* Main */
 main {
-    width: 100%;
     margin-top: 2%;
-    background-color: blue;
+}
+
+.main-title h2 {
+}
+
+.main-title p {
+    font-size: 70%;
+    font-weight: 300%;
+    color: rgb(155, 155, 155);
 }
 
 .column {
-    background-color: rgb(0, 195, 255);
     margin: 1%;
     padding: 1%;
 }
 
-.column-left,
-.column-right {
+.column-left {
     float: left;
+    height: 100%;
     width: 23%;
     margin-left: none;
+}
+
+.column-left image {
+    width: 100px;
+    height: 100px;
 }
 
 .column-center {
     float: left;
     width: 48%;
+}
+
+.column-right {
+    float: left;
+    width: 23%;
+    margin-left: none;
 }
 /* Fine main */
 
@@ -129,9 +146,17 @@ footer {
 /* Debug */
 
 .debug .container {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .debug .menù {
         /* background-color: rgb(209, 73, 180); */
     }
+
+.debug main {
+    /* background-color: blue; */
+}
+
+.debug .column {
+    background-color: rgb(0, 195, 255);
+}
